@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -name "*.html" -newer ../ -exec cp {} ../ \
+rsync -av --ignore-existing --include=*.html . ../

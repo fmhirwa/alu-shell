@@ -1,0 +1,1 @@
+echo "Hello, World" . -type f -name .js -delete . -type d -not -name .

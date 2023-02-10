@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#Printing contents of a file that re username, userid, home directory path for a user
+
+while IFS=":" read -r login _ uid _ _ home _
+do
+    printf "%s:%s:%s\n" "${login}" "${uid}" "${home}"
+done </etc/passwd

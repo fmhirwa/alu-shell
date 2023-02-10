@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+#Another fizzbuzz? Displaying 0-100 where fizzbuzz prints with 3 and 5 multiples, fizz+ fizz with mutiples of 3 and buzz with multiples of 5.
+for ((n = 1; n <= 100; ++n))
+do
+    if (( n % 3 && n % 5 ))
+    then
+        echo "$n"
+    else
+        (( n % 3 )) || echo -n Fizz
+        (( n % 5 )) || echo -n Buzz
+        echo
+    fi
+done

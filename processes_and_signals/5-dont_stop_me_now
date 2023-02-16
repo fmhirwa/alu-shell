@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#Stops process using Kill
+#Queen song OMG
+kill "$(ps -x | pgrep -f beyond)"

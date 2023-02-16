@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+#A ton of instructions basically
+#Where is file 9 though?
+function terminator() {
+    rm /var/run/myscript.pid
+    exit
+}
+
+trap "echo I hate the kill command;terminator" SIGTERM
+trap "echo Y U no love me?!;terminator" SIGINT
+
+echo $$ >> /var/run/myscript.pid
+
+while true 
+do
+echo To infinity and beyond;
+done

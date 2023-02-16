@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#Stops with no kill... freeze I guess
+pkill -f -o 4-to_infinity_and_beyond
